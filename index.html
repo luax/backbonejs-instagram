@@ -1,0 +1,21 @@
+<!doctype html>
+  <head>
+    <meta charset="utf-8">
+    <title>Backbone instagram</title>
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/main.css">
+  </head>
+  <body>
+    <div id="instagram" class="container">
+      <ul class="nav nav-tabs pull-center">
+        <input id="id" type="text" value="id"></input>
+        <input id="tag" type="text" value="tag"></input>
+        <button type="button" id="fetch" class="btn btn-default">Fetch</button>
+        <button type="button" id="paginate" class="btn btn-default">Pagination</button>
+        <button type="button" id="poll"  class="btn btn-default">Poll</button>
+      </ul>
+      <div id="pictures" class="row"></div> 
+    </div>
+    <script data-main="js/main" src="js/vendor/requirejs/require.js"></script>
+  </body>
+</html>

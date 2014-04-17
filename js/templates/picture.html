@@ -1,0 +1,14 @@
+<div class='thumbnail picture'>
+  <a href='<%=link%>'>
+    <img src='<%= image_link %>'/>
+  </a>
+  <%if (caption) { %>
+    <div class='caption'>
+      <%=caption.text%>
+    </div>
+  <% } %>
+  <div class='user'>
+    <a href='http://instagram.com/<%=user.username%>' target='_blank' title='<%=user.full_name.trim()%>'></a>
+    <img src='<%= user.profile_picture %>' class='profile'/> <%=user.full_name%>
+  </div>
+</div>
